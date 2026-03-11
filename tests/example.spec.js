@@ -3,31 +3,38 @@ import { test, expect } from '@playwright/test';
 
 
 
-test("login page",async ({ page }) => {
+test.skip("login page",async ({ page }) => {
   await page.goto('http://localhost:3004');
   await expect(page).toHaveTitle("Login");
 });
 
-test("login with valid credentials",async ({ page }) => {
+[
+  {email:"vinayksgowda123@gmail.com",password:"vinay@123"},
+  {email:"test@example.com",password:"password123"},
+  {email:"user@example.com",password:"securepassword"}
+].forEach(obj=> {
+
+test(`login with valid credentials for ${obj.email}`,async ({ page }) => {
 
   await page.goto('http://localhost:3004');
   await page.locator("#signupLink").click();
- 
-  await page.locator("#regEmail").fill("vinayksgowda123@gmail.com");
-  await page.locator("#regPassword").fill("vinay@123");
+
+  await page.locator("#regEmail").fill(obj.email);
+  await page.locator("#regPassword").fill(obj.password);
   await page.locator("#signUpButton").click();
 
   await page.goto('http://localhost:3004');
-  await page.locator("#loginEmail").fill("vinayksgowda123@gmail.com");
-  await page.locator("#loginPassword").fill("vinay@123");
+  await page.locator("#loginEmail").fill(obj.email);
+  await page.locator("#loginPassword").fill(obj.password);
   await page.locator('#submitButton').click();
   await page.screenshot({ path: 'screenshot.png',fullPage: true });
   await expect(page).toHaveTitle("Cloth Shop - Home");
+
 });
+})
 
 
-
-test('testing amazon page', async ({ page }) => {
+test.skip('testing amazon page', async ({ page }) => {
   await page.goto('https://www.amazon.com/');
 
   
