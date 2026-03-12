@@ -1,7 +1,7 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
 
-test.skip("login page",async ({ page }) => {
+test("login page",async ({ page }) => {
   await page.goto('http://localhost:3004');
   await expect(page).toHaveTitle("Login");
 });
@@ -57,7 +57,7 @@ if (await submitButton.count() > 0 && await submitButton.first().isVisible()) {
 });                       
 
 
-test.skip('has title', async ({ page }) => {
+test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   
@@ -65,7 +65,7 @@ test.skip('has title', async ({ page }) => {
 });
   
 
-test.skip('get started link', async ({ page }) => {
+test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Click the get started link.

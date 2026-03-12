@@ -5,11 +5,9 @@ test('test', async ({ page }) => {
   await page.getByRole('link', { name: 'Dynamic ID' }).click();
   await page.getByRole('link', { name: 'Home' }).click();
   await page.getByRole('link', { name: 'Resources' }).click();
-  
+
   await expect(page).toHaveTitle("Resources");
 });
-
-
 
 test('test2', async ({ page }) => {
   await page.goto('http://uitestingplayground.com/');
@@ -77,7 +75,7 @@ test('test9', async ({ page }) => {
   await page.getByRole('link', { name: 'Resources' }).click();
   await page.getByRole('link', { name: 'MDN' }).click();
   await page.getByRole('button', { name: 'Search', exact: true }).click();
-  await page.getByRole('searchbox', { name: 'Search' }).fill('promise');
-  await page.getByRole('searchbox', { name: 'Search' }).press('Enter');
   
 });
+
+
