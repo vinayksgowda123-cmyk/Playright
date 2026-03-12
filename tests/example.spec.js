@@ -2,7 +2,6 @@
 import { test, expect } from '@playwright/test';
 
 
-
 test.skip("login page",async ({ page }) => {
   await page.goto('http://localhost:3004');
   await expect(page).toHaveTitle("Login");
@@ -13,7 +12,6 @@ test.skip("login page",async ({ page }) => {
   {email:"test@example.com",password:"password123"},
   {email:"user@example.com",password:"securepassword"}
 ].forEach(obj=> {
-
 test(`login with valid credentials for ${obj.email}`,async ({ page }) => {
 
   await page.goto('http://localhost:3004');
