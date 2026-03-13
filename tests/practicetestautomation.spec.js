@@ -9,6 +9,8 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Get XPath cheat sheet' }).click();
  await expect(page.getByText("This value should be a valid email.")).toBeVisible();
 });
+
+
 test('test2', async ({ page }) => {
   await page.goto('https://practicetestautomation.com/');
   await page.getByRole('link', { name: 'Practice', exact: true }).click();
