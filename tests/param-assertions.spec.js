@@ -4,6 +4,7 @@ const { test, expect } = require('@playwright/test');
 // The data we want to parameterize
 const searchData = ['Java', 'Python', 'JavaScript'];
 
+
 test.describe('Parameterization and Advanced Assertions', () => {
   
     
@@ -42,4 +43,5 @@ test.describe('Parameterization and Advanced Assertions', () => {
       timeout: 5000,
     }).toBe(5);
   });
+  
 });
