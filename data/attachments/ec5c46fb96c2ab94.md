@@ -1,0 +1,494 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - link "⚡ Parity Deals" [ref=e3] [cursor=pointer]:
+      - /url: https://www.paritydeals.com/
+    - generic [ref=e4]:
+      - text: Hello
+      - img [ref=e6]
+      - text: Hey! It looks like you are from India. We support Parity Purchasing Power, so if you need it, use code “pdqnbzrc60” to get 60% off your subscription at checkout.
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - navigation [ref=e16]:
+        - generic [ref=e18]:
+          - link "R ReqRes" [ref=e19] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e20]: R
+            - generic [ref=e21]: ReqRes
+          - generic [ref=e22]:
+            - link "Pricing" [ref=e23] [cursor=pointer]:
+              - /url: "#pricing"
+            - link "Teams" [ref=e24] [cursor=pointer]:
+              - /url: /teams
+            - link "Blog" [ref=e25] [cursor=pointer]:
+              - /url: /blog
+            - link "Docs" [ref=e26] [cursor=pointer]:
+              - /url: /docs
+            - link "About" [ref=e27] [cursor=pointer]:
+              - /url: /about
+          - link "Get Started" [ref=e28] [cursor=pointer]:
+            - /url: https://app.reqres.in/
+            - text: Get Started
+            - img [ref=e29]
+      - generic [ref=e31]:
+        - generic:
+          - img
+        - generic [ref=e33]:
+          - paragraph [ref=e34]: Frontend-first backend
+          - heading "A real backend you call with fetch()." [level=1] [ref=e35]:
+            - text: A real backend you
+            - text: call with fetch().
+          - paragraph [ref=e36]:
+            - text: Collections, auth, and logs - from a single URL.
+            - text: No servers. No DevOps. No backend team required.
+          - link "Create your backend" [ref=e38] [cursor=pointer]:
+            - /url: https://app.reqres.in
+          - generic [ref=e39]:
+            - paragraph [ref=e40]: Free to try. No card required. API key in your dashboard.
+            - link "Waitlist demo" [ref=e41] [cursor=pointer]:
+              - /url: https://reqres-waitlist-demo.reqres.workers.dev
+              - generic [ref=e42]: Waitlist demo
+            - text: ·
+            - link "Task Manager demo" [ref=e43] [cursor=pointer]:
+              - /url: https://demo.reqres.in
+              - generic [ref=e44]: Task Manager demo
+            - text: "|"
+            - link "QA teams" [ref=e45] [cursor=pointer]:
+              - /url: /teams
+              - generic [ref=e46]: QA teams
+              - img [ref=e47]
+          - generic [ref=e49]:
+            - generic [ref=e51]: What is ReqRes?
+            - paragraph [ref=e52]:
+              - text: ReqRes gives you a backend - API, database, auth, and logs - without building or deploying anything.
+              - text: You get a URL. You send requests. It just works.
+          - link "See how it works" [ref=e54] [cursor=pointer]:
+            - /url: "#how"
+            - generic [ref=e55]: See how it works
+            - img [ref=e56]
+      - generic [ref=e59]:
+        - generic [ref=e60]:
+          - button "Before" [ref=e61] [cursor=pointer]
+          - button "With ReqRes" [ref=e62] [cursor=pointer]
+        - generic [ref=e63]:
+          - img [ref=e64]
+          - generic [ref=e86]:
+            - img [ref=e88]
+            - generic [ref=e92]: Database
+          - generic [ref=e93]:
+            - img [ref=e95]
+            - generic [ref=e98]: Auth
+          - generic [ref=e99]:
+            - img [ref=e101]
+            - generic [ref=e104]: API
+          - generic [ref=e105]:
+            - img [ref=e107]
+            - generic [ref=e110]: Hosting
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - generic [ref=e116]: Logs
+          - generic [ref=e117]:
+            - img [ref=e119]
+            - generic [ref=e121]: CRUD
+          - generic [ref=e122]:
+            - generic [ref=e127]: You
+            - generic [ref=e128]: Managing it all
+          - generic [ref=e129]:
+            - generic [ref=e132]: reqres.in/api/your-project
+            - generic [ref=e133]:
+              - text: Database · Auth · CRUD · Hosting · Logs
+              - text: All handled. One URL.
+            - generic [ref=e134]:
+              - generic [ref=e135]: Postgres ✓
+              - generic [ref=e136]: OAuth ✓
+              - generic [ref=e137]: Express ✓
+              - generic [ref=e138]: AWS ✓
+              - generic [ref=e139]: Datadog ✓
+              - generic [ref=e140]: Routes ✓
+          - generic [ref=e141]:
+            - img [ref=e143]
+            - generic [ref=e145]:
+              - generic [ref=e146]: iOS App
+              - generic [ref=e147]: fetch(url)
+          - generic [ref=e148]:
+            - img [ref=e150]
+            - generic [ref=e153]:
+              - generic [ref=e154]: React App
+              - generic [ref=e155]: fetch(url)
+          - generic [ref=e156]:
+            - img [ref=e158]
+            - generic [ref=e160]:
+              - generic [ref=e161]: Any Frontend
+              - generic [ref=e162]: fetch(url)
+        - paragraph [ref=e163]:
+          - text: Database, auth, CRUD, hosting - handled.
+          - text: Just send requests.
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - generic [ref=e167]: Try it now
+          - heading "Your backend, live in your browser." [level=2] [ref=e168]
+          - paragraph [ref=e169]: No signup required. Just hit Send.
+        - generic [ref=e171]:
+          - button "I'm building something" [ref=e172] [cursor=pointer]
+          - button "I'm testing something" [ref=e173] [cursor=pointer]
+        - paragraph [ref=e174]: Ship your frontend with a real backend — no Express, no Postgres, no deploy.
+        - generic [ref=e175]:
+          - generic [ref=e181]: reqres-terminal
+          - generic:
+            - generic:
+              - generic:
+                - generic: Request
+                - generic:
+                  - generic: That's stored. Now fetch it back
+                  - img
+                - group "HTTP Method":
+                  - button "GET"
+                  - button "POST"
+                  - button "PUT"
+                  - button "DELETE"
+                - generic:
+                  - code: https://reqres.in/api/my-app/collections/todos/records
+                - generic:
+                  - generic: Body
+                  - generic:
+                    - generic: "{ \"title\": \"Ship the frontend\", \"completed\": false }"
+                    - textbox "Request body JSON": "{ \"title\": \"Ship the frontend\", \"completed\": false }"
+                - button "Send":
+                  - generic: Send
+                  - img
+              - generic:
+                - generic: Response
+                - generic: // Response will appear here
+      - generic [ref=e185]:
+        - generic [ref=e187]: What developers say
+        - generic [ref=e189]:
+          - blockquote [ref=e190]:
+            - text: "\""
+            - paragraph [ref=e191]: Using ReqRes is way faster - you don't have to deploy, create schemas, or check versions. ReqRes already handles that for you.
+          - generic [ref=e192]:
+            - img "Avenix"
+            - generic [ref=e193]:
+              - text: "- Adrijan Mahmuti,"
+              - link "Avenix" [ref=e194] [cursor=pointer]:
+                - /url: https://avenix.dev
+      - generic [ref=e196]:
+        - generic [ref=e197]:
+          - paragraph [ref=e198]: Built for you
+          - heading "What are you building?" [level=2] [ref=e199]
+          - paragraph [ref=e200]: ReqRes works differently depending on what you need. Find your path.
+        - generic [ref=e201]:
+          - link "For Founders Ship MVPs and client-only SaaS without backend overhead. Start shipping" [ref=e202] [cursor=pointer]:
+            - /url: /for/founders
+            - img [ref=e204]
+            - generic [ref=e206]:
+              - heading "For Founders" [level=3] [ref=e207]
+              - paragraph [ref=e208]: Ship MVPs and client-only SaaS without backend overhead.
+            - generic [ref=e209]:
+              - text: Start shipping
+              - generic [ref=e210]: →
+          - link "For Frontend Developers Own the full stack without waiting on backend tickets. See how it works" [ref=e211] [cursor=pointer]:
+            - /url: /for/frontend-developers
+            - img [ref=e213]
+            - generic [ref=e215]:
+              - heading "For Frontend Developers" [level=3] [ref=e216]
+              - paragraph [ref=e217]: Own the full stack without waiting on backend tickets.
+            - generic [ref=e218]:
+              - text: See how it works
+              - generic [ref=e219]: →
+          - link "For QA Engineers Predictable data and logs for Playwright, Cypress, and CI. See the QA guide" [ref=e220] [cursor=pointer]:
+            - /url: /for/qa-engineers
+            - img [ref=e222]
+            - generic [ref=e224]:
+              - heading "For QA Engineers" [level=3] [ref=e225]
+              - paragraph [ref=e226]: Predictable data and logs for Playwright, Cypress, and CI.
+            - generic [ref=e227]:
+              - text: See the QA guide
+              - generic [ref=e228]: →
+          - link "For Educators Teach HTTP, auth, and REST without local setup friction. Set up a classroom" [ref=e229] [cursor=pointer]:
+            - /url: /for/educators
+            - img [ref=e231]
+            - generic [ref=e233]:
+              - heading "For Educators" [level=3] [ref=e234]
+              - paragraph [ref=e235]: Teach HTTP, auth, and REST without local setup friction.
+            - generic [ref=e236]:
+              - text: Set up a classroom
+              - generic [ref=e237]: →
+      - generic [ref=e239]:
+        - generic [ref=e240]:
+          - generic [ref=e241]: Built with ReqRes
+          - paragraph [ref=e242]: Real apps, zero backend code. See what you can build.
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - generic [ref=e245]:
+              - img [ref=e247]
+              - generic [ref=e250]:
+                - heading "Notes App" [level=3] [ref=e251]
+                - generic [ref=e252]: Interactive
+            - paragraph [ref=e253]: Full CRUD notes app with collections, create, edit, and delete. Runs inside the ReqRes dashboard.
+            - link "Try it" [ref=e254] [cursor=pointer]:
+              - /url: https://app.reqres.in/examples/notes-app
+              - text: Try it
+              - img [ref=e255]
+          - generic [ref=e257]:
+            - generic [ref=e258]:
+              - img [ref=e260]
+              - generic [ref=e263]:
+                - heading "Task Register" [level=3] [ref=e264]
+                - generic [ref=e265]: Standalone
+            - paragraph [ref=e266]: Operations task manager with statuses, priorities, and filtering. Deployed as its own app with auth.
+            - link "Open demo" [ref=e267] [cursor=pointer]:
+              - /url: https://demo.reqres.in
+              - text: Open demo
+              - img [ref=e268]
+          - generic [ref=e270]:
+            - generic [ref=e271]:
+              - img [ref=e273]
+              - generic [ref=e278]:
+                - heading "Waitlist" [level=3] [ref=e279]
+                - generic [ref=e280]: Open source
+            - paragraph [ref=e281]: Email signup waitlist with position tracking, admin dashboard, and magic-link auth. Fork and deploy.
+            - link "View demo" [ref=e282] [cursor=pointer]:
+              - /url: https://reqres-waitlist-demo.reqres.workers.dev
+              - text: View demo
+              - img [ref=e283]
+      - generic [ref=e286]:
+        - generic [ref=e287]:
+          - generic [ref=e288]: How ReqRes fits
+          - paragraph [ref=e289]:
+            - text: Not a replacement for tools you already use.
+            - text: A shortcut that removes the ones you don't need.
+        - generic [ref=e290]:
+          - generic [ref=e291] [cursor=pointer]:
+            - generic [ref=e292]:
+              - generic [ref=e293]:
+                - img [ref=e295]
+                - generic [ref=e298]: vs Supabase
+              - img [ref=e299]
+            - generic [ref=e301]:
+              - paragraph [ref=e302]: Supabase is a production database you own. ReqRes is the backend you use before you need one - for prototypes, demos, QA, and client-only apps.
+              - link "Read full comparison" [ref=e303]:
+                - /url: /compared/supabase
+                - text: Read full comparison
+                - img [ref=e304]
+          - generic [ref=e306] [cursor=pointer]:
+            - generic [ref=e307]:
+              - generic [ref=e308]:
+                - img [ref=e310]
+                - generic [ref=e314]: vs Firebase
+              - img [ref=e315]
+            - generic [ref=e317]:
+              - paragraph [ref=e318]: Firebase is a full Google platform. ReqRes is simpler and faster - no SDK, no security rules, just REST endpoints in 30 seconds.
+              - link "Read full comparison" [ref=e319]:
+                - /url: /compared/firebase
+                - text: Read full comparison
+                - img [ref=e320]
+          - generic [ref=e322] [cursor=pointer]:
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - img [ref=e326]
+                - generic [ref=e329]: vs Postman
+              - img [ref=e330]
+            - generic [ref=e332]:
+              - paragraph [ref=e333]: Postman tests APIs. ReqRes is the API - create a project and Postman has something real to hit, with data that persists.
+              - link "Read full comparison" [ref=e334]:
+                - /url: /compared/postman
+                - text: Read full comparison
+                - img [ref=e335]
+          - generic [ref=e337] [cursor=pointer]:
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - img [ref=e341]
+                - generic [ref=e343]: vs Vercel
+              - img [ref=e344]
+            - generic [ref=e346]:
+              - paragraph [ref=e347]: Vercel deploys your frontend. ReqRes is the backend it calls - collections, auth, and logs without writing serverless functions.
+              - link "Read full comparison" [ref=e348]:
+                - /url: /compared/vercel
+                - text: Read full comparison
+                - img [ref=e349]
+        - link "See all comparisons" [ref=e352] [cursor=pointer]:
+          - /url: /compared
+          - text: See all comparisons
+          - img [ref=e353]
+      - img [ref=e355]
+      - region "Used by developers at companies like" [ref=e356]:
+        - generic [ref=e357]:
+          - heading "Used by developers at companies like" [level=2] [ref=e358]
+          - paragraph [ref=e359]: Logos reflect domains used by individual developers and do not imply corporate endorsement.
+          - list "Company logos" [ref=e360]:
+            - listitem "ReqRes is used by developers at Cisco (opens in new tab)" [ref=e361] [cursor=pointer]:
+              - img "Cisco"
+            - listitem "ReqRes is used by developers at Microsoft (opens in new tab)" [ref=e362] [cursor=pointer]:
+              - img "Microsoft"
+            - listitem "ReqRes is used by developers at Adobe (opens in new tab)" [ref=e363] [cursor=pointer]:
+              - img "Adobe"
+            - listitem "ReqRes is used by developers at IBM (opens in new tab)" [ref=e364] [cursor=pointer]:
+              - img "IBM"
+            - listitem "ReqRes is used by developers at Confluent (opens in new tab)" [ref=e365] [cursor=pointer]:
+              - img "Confluent"
+            - listitem "ReqRes is used by developers at Capgemini (opens in new tab)" [ref=e366] [cursor=pointer]:
+              - img "Capgemini"
+            - listitem "ReqRes is used by developers at Sainsbury's (opens in new tab)" [ref=e367] [cursor=pointer]:
+              - img "Sainsbury's"
+            - listitem "ReqRes is used by developers at Lloyds Banking Group (opens in new tab)" [ref=e368] [cursor=pointer]:
+              - img "Lloyds Banking Group"
+            - listitem "ReqRes is used by developers at Builder.io (opens in new tab)" [ref=e369] [cursor=pointer]:
+              - img "Builder.io"
+            - listitem "ReqRes is used by developers at Coca-Cola (opens in new tab)" [ref=e370] [cursor=pointer]:
+              - img "Coca-Cola"
+            - listitem "ReqRes is used by developers at Vodafone (opens in new tab)" [ref=e371] [cursor=pointer]:
+              - img "Vodafone"
+            - listitem "ReqRes is used by developers at Cognizant (opens in new tab)" [ref=e372] [cursor=pointer]:
+              - img "Cognizant"
+            - listitem "ReqRes is used by developers at EPAM (opens in new tab)" [ref=e373] [cursor=pointer]:
+              - img "EPAM"
+            - listitem "ReqRes is used by developers at UK Health Security Agency (opens in new tab)" [ref=e374] [cursor=pointer]:
+              - img "UK Health Security Agency"
+            - listitem "ReqRes is used by developers at Deloitte (opens in new tab)" [ref=e375] [cursor=pointer]:
+              - img "Deloitte"
+            - listitem "ReqRes is used by developers at Accenture (opens in new tab)" [ref=e376] [cursor=pointer]:
+              - img "Accenture"
+            - listitem "ReqRes is used by developers at Mastercard (opens in new tab)" [ref=e377] [cursor=pointer]:
+              - img "Mastercard"
+            - listitem "ReqRes is used by developers at Adidas (opens in new tab)" [ref=e378] [cursor=pointer]:
+              - img "Adidas"
+            - listitem "ReqRes is used by developers at Siemens (opens in new tab)" [ref=e379] [cursor=pointer]:
+              - img "Siemens"
+            - listitem "ReqRes is used by developers at Salesforce (opens in new tab)" [ref=e380] [cursor=pointer]:
+              - img "Salesforce"
+          - link "Add your logo here - sign up at app.reqres.in (opens in new tab)" [ref=e382] [cursor=pointer]:
+            - /url: https://app.reqres.in
+            - generic [ref=e383]:
+              - generic [ref=e384]: +
+              - text: Your logo here
+      - generic [ref=e386]:
+        - generic [ref=e387]:
+          - paragraph [ref=e388]: Pricing
+          - heading "Start free. Scale when you're ready." [level=2] [ref=e389]
+          - paragraph [ref=e390]: Upgrade limits without rebuilding your projects.
+        - generic [ref=e391]:
+          - generic [ref=e392]:
+            - generic [ref=e393]: Free
+            - generic [ref=e394]: Collections, app users, and logs - no card required.
+          - link "Start free" [ref=e396] [cursor=pointer]:
+            - /url: https://app.reqres.in
+        - generic [ref=e397]:
+          - generic [ref=e398]:
+            - generic [ref=e399]:
+              - generic [ref=e400]: Dev
+              - generic [ref=e401]: ₹1,111/mo
+              - generic [ref=e402]: For freelancers and side projects
+            - generic [ref=e403]:
+              - paragraph [ref=e404]: Everything in Free, plus
+              - list [ref=e405]:
+                - listitem [ref=e406]:
+                  - generic [ref=e407]: ✓
+                  - text: Higher rate limits
+                - listitem [ref=e408]:
+                  - generic [ref=e409]: ✓
+                  - text: 30-day log retention
+                - listitem [ref=e410]:
+                  - generic [ref=e411]: ✓
+                  - text: Automations
+            - link "Get started" [ref=e413] [cursor=pointer]:
+              - /url: https://app.reqres.in
+          - generic [ref=e414]:
+            - generic [ref=e415]:
+              - generic [ref=e416]:
+                - generic [ref=e417]: Pro
+                - generic [ref=e418]: Recommended
+              - generic [ref=e419]: ₹2,685/mo
+              - generic [ref=e420]: For agencies and studios
+            - generic [ref=e421]:
+              - paragraph [ref=e422]: Everything in Dev, plus
+              - list [ref=e423]:
+                - listitem [ref=e424]:
+                  - generic [ref=e425]: ✓
+                  - text: Multiple projects
+                - listitem [ref=e426]:
+                  - generic [ref=e427]: ✓
+                  - text: More app users
+                - listitem [ref=e428]:
+                  - generic [ref=e429]: ✓
+                  - text: Webhooks + logs
+            - link "Upgrade to Pro" [ref=e431] [cursor=pointer]:
+              - /url: https://app.reqres.in
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]: Team
+              - generic [ref=e435]: ₹7,314/mo
+              - generic [ref=e436]: For growing teams
+            - generic [ref=e437]:
+              - paragraph [ref=e438]: Everything in Pro, plus
+              - list [ref=e439]:
+                - listitem [ref=e440]:
+                  - generic [ref=e441]: ✓
+                  - text: High volume limits
+                - listitem [ref=e442]:
+                  - generic [ref=e443]: ✓
+                  - text: Seats + orgs
+                - listitem [ref=e444]:
+                  - generic [ref=e445]: ✓
+                  - text: SLA options
+            - link "Get started" [ref=e447] [cursor=pointer]:
+              - /url: https://app.reqres.in
+        - generic [ref=e448]:
+          - generic [ref=e450]:
+            - generic [ref=e451]: Enterprise
+            - generic [ref=e452]: Custom limits, SSO, or data residency - let's tailor a plan.
+          - link "Contact us →" [ref=e454] [cursor=pointer]:
+            - /url: mailto:hello@reqres.in
+        - generic [ref=e455]:
+          - link "Looking for QA team plans?" [ref=e456] [cursor=pointer]:
+            - /url: /teams
+            - generic [ref=e457]: Looking for QA team plans?
+            - img [ref=e458]
+          - link "Teaching a class? Classroom plans from $49/mo" [ref=e460] [cursor=pointer]:
+            - /url: /for/educators
+            - generic [ref=e461]: Teaching a class? Classroom plans from $49/mo
+            - img [ref=e462]
+        - generic [ref=e465]:
+          - generic [ref=e466]:
+            - img [ref=e468]
+            - generic [ref=e470]:
+              - generic [ref=e471]: Run ReqRes on your own servers
+              - paragraph [ref=e472]: The same API your test suites depend on, in a Docker container. No external calls, no rate limits, no flaky CI pipelines.
+              - code [ref=e473]: docker run -p 3000:3000 reqres/reqres-api
+          - link "Learn more" [ref=e474] [cursor=pointer]:
+            - /url: /self-hosted
+            - text: Learn more
+            - img [ref=e475]
+      - generic [ref=e479]:
+        - generic:
+          - img
+        - generic [ref=e481]:
+          - paragraph [ref=e482]: Start
+          - heading "Ready to build?" [level=2] [ref=e483]
+          - paragraph [ref=e484]: Create a free project and ship your first endpoint in minutes.
+          - generic [ref=e485]:
+            - link "Create your backend" [ref=e486] [cursor=pointer]:
+              - /url: https://app.reqres.in
+            - link "See example apps" [ref=e487] [cursor=pointer]:
+              - /url: "#examples"
+      - generic [ref=e489]:
+        - link "R ReqRes" [ref=e490] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e491]: R
+          - generic [ref=e492]: ReqRes
+        - generic [ref=e493]:
+          - link "Docs" [ref=e494] [cursor=pointer]:
+            - /url: /docs
+          - link "Support" [ref=e495] [cursor=pointer]:
+            - /url: mailto:hello@reqres.in
+        - generic [ref=e496]:
+          - generic [ref=e497]: © 2026 ReqRes. Frontend-first backend.
+          - generic [ref=e498]:
+            - text: Made by
+            - link "Ben Howdle" [ref=e499] [cursor=pointer]:
+              - /url: https://benhowdle.im
+            - text: · Writing
+            - link "The First CTO" [ref=e500] [cursor=pointer]:
+              - /url: https://benhowdle.im/first-cto-playbook
+```
