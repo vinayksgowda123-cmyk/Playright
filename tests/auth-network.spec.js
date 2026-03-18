@@ -41,7 +41,7 @@ test.describe("Auth, Network & Advanced Concepts", () => {
         body: JSON.stringify({ data: { first_name: "MockedName" } }),
       });
     });
-    await page.goto("https://reqres.in/");
+    await page.goto("http://localhost:3004");
 
     // Scroll to the element and use user-facing text locators
     const singleUserButton = page.getByText("Single user", { exact: true });

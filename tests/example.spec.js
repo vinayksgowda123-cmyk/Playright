@@ -1,6 +1,6 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-
+import { ContactPage } from "../POM/login"
 test("login page",async ({ page }) => {
   await page.goto('http://localhost:3004');
   await expect(page).toHaveTitle("Login");
@@ -21,13 +21,18 @@ test(`login with valid credentials for ${obj.email}`,async ({ page }) => {
   await page.locator("#regPassword").fill(obj.password);
   await page.locator("#signUpButton").click();
 
-  await page.goto('http://localhost:3004');
-  await page.locator("#loginEmail").fill(obj.email);
-  await page.locator("#loginPassword").fill(obj.password);
-  await page.locator('#submitButton').click();
+  const c = new ContactPage(page);
+  await c.navigate();
+  await c.fillForm(obj.email, obj.password);
+  await c.submit();
+  // await page.goto('http://localhost:3004'); // navigate
+  // await page.locator("#loginEmail").fill(obj.email); // fill
+  // await page.locator("#loginPassword").fill(obj.password); // fill
+  // await page.locator('#submitButton').click(); // submit
   await page.screenshot({ path: 'screenshot.png',fullPage: true });
   await expect(page).toHaveTitle("Cloth Shop - Home");
 });
+
 })
 
 
